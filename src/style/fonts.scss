@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: local('Euclid Circular B Medium'), local('Euclid-Circular-B-Medium'),
+  url('../fonts/EuclidCircularB-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+$main-font: "Euclid Circular B", sans-serif;

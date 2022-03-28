@@ -1,0 +1,122 @@
+@import "fonts";
+@import "colors";
+
+.header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(61, 60, 60, 0.08);
+  border-bottom-style: solid;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto 140px;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left-navigation-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    :last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__left-navigation-list-item {
+    text-decoration: none;
+    font-family: $main-font;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 24px;
+    color: $main-color;
+    margin-right: 64px;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__right-language {
+    margin-left: 10px;
+
+    :last-child {
+      margin-right: 0;
+    }
+  }
+  &__right-language-link {
+    color: rgba(0, 0, 0, 0.24);
+    font-family: $main-font;
+    font-size: 14px;
+    margin-right: 24px;
+  }
+
+  &__right-login {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: $main-font;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 156px;
+  }
+
+  &__right-login-link {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  &__right-login-link-title {
+    display: block;
+    margin-left: 8px;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+  }
+
+  &__right-phone {
+    margin-left: 40px;
+  }
+
+  &__right-phone-link {
+    color: white;
+    font-family: $main-font;
+    font-size: 14px;
+  }
+}
+.logo {
+  position: relative;
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link-stars {
+    position: absolute;
+    top: 63px;
+    padding: 0 5px;
+    background-color: white;
+  }
+}

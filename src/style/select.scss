@@ -1,0 +1,249 @@
+@import "fonts";
+@import "colors";
+
+.select {
+
+  &__container {
+    width: 1160px;
+    margin: 86px auto 0 auto;
+    height: 1000px;
+  }
+
+  &__title {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 50px;
+  }
+
+  &__search {
+    display: flex;
+    height: 80px;
+    background-color: $light-gray;
+    border-radius: 8px;
+    padding-inline-start: 8px;
+    margin-bottom: 42px;
+  }
+
+  &__search-room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__search-room-type {
+    height: 64px;
+    width: 100%;
+    max-width: 328px;
+    border: 1px solid $dark-gray;
+    background-color: white;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__search-room-type-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 13px 20px 16px;
+  }
+
+  &__search-room-type-day {
+    display: block;
+  }
+
+  &__search-room-type-droplist {
+    position: relative;
+    top: 0;
+    left: -2px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 328px;
+    background-color: white;
+    border: 1px solid $dark-gray;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__search-room-type-droplist-item {
+    display: none;
+    height: 64px;
+    width: 100%;
+    max-width: 328px;
+    background-color: white;
+    border-bottom: 1px solid $dark-gray;
+
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
+
+  &__search-room-type-droplist-item-name {
+    display: block;
+    margin: 20px 13px 20px 16px;
+  }
+
+  &__search-room-date {
+    height: 64px;
+    width: 100%;
+    max-width: 264px;
+    border: 1px solid $dark-gray;
+    background-color: white;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__search-room-date-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 13px 20px 16px;
+  }
+
+  &__search-room-date-day {
+    display: block;
+  }
+
+  &__search-room-description {
+    height: 64px;
+    width: 100%;
+    max-width: 392px;
+    border: 1px solid $dark-gray;
+    background-color: white;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__search-room-description-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 13px 20px 16px;
+  }
+
+  &__search-room-description-day {
+    display: block;
+  }
+
+  &__search-button {
+    height: 80px;
+    width: 100%;
+    max-width: 144px;
+    background-color: $main-color;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+  }
+
+  //&__advertisement-tabs {
+  //  font-size: 0;
+  //}
+  //
+  //&__advertisement-tabs>input[type="radio"] {
+  //  display: none;
+  //}
+  //
+  //&__advertisement-tabs>div {
+  //  /* скрыть контент по умолчанию */
+  //  display: none;
+  //  border: 1px solid #e0e0e0;
+  //  padding: 10px 15px;
+  //  font-size: 16px;
+  //}
+  //
+  ///* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+  //#tab-btn-1:checked~#content-1,
+  //#tab-btn-2:checked~#content-2,
+  //#tab-btn-3:checked~#content-3 {
+  //  display: block;
+  //}
+  //
+  //&__advertisement-tabs>label {
+  //  display: inline-block;
+  //  text-align: center;
+  //  vertical-align: middle;
+  //  user-select: none;
+  //  background-color: #f5f5f5;
+  //  border: 1px solid #e0e0e0;
+  //  padding: 2px 8px;
+  //  font-size: 16px;
+  //  line-height: 1.5;
+  //  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  //  cursor: pointer;
+  //  position: relative;
+  //  top: 1px;
+  //}
+  //
+  //&__advertisement-tabs>label:not(:first-of-type) {
+  //  border-left: none;
+  //}
+  //
+  //&__advertisement-tabs>input[type="radio"]:checked+label {
+  //  background-color: #fff;
+  //  border-bottom: 1px solid #fff;
+  //}
+
+  &__advertisement-tabs {
+    display: flex;
+    border-bottom: 1px solid rgba(61, 60, 60, 0.08);
+    margin-bottom: 32px;
+  }
+
+  &__advertisement-tabs-tab {
+    margin-right: 48px;
+
+    &:first-child {
+      padding-bottom: 5px;
+      border-bottom: 2px solid $dark-gold;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__advertisement-tabs-tab-name {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &__advertisement-tabs-images {
+
+  }
+
+  &__advertisement-tabs-images-image {
+    margin-right: 40px;
+    overflow: hidden;
+  }
+
+  &__pattern {
+    position: relative;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.56);
+    height: 200px;
+    width: 200px;
+  }
+}

@@ -1,0 +1,47 @@
+.background-image {
+  width: 100%;
+
+  &__flower {
+    background-image: url("../images/flower.png");
+    position: absolute;
+    height: 936px;
+    width: 910px;
+    max-width: 60%;
+    top: 0;
+    right: 0;
+    z-index: -2;
+  }
+  &__flower-stroke {
+    background-image: url("../images/flower_stroke.png");
+    position: absolute;
+    height: 936px;
+    width: 910px;
+    max-width: 60%;
+    top: 0;
+    right: 40px;
+    z-index: -3;
+  }
+  &__intersection {
+    background-image: url("../images/intersect.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 313px;
+    width: 634px;
+    max-width: 60%;
+    top: 610px;
+    right: 88px;
+    z-index: -1;
+  }
+
+  &__intersection-pattern {
+    background-image: url("../images/intersect_pattern.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 313px;
+    width: 634px;
+    max-width: 60%;
+    top: 610px;
+    right: 0;
+    z-index: -1;
+  }
+}
