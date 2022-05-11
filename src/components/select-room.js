@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {CalendarIcon} from "../images/icons/calendar-icon";
 import {SubstractIcon} from "../images/icons/subtract-icon";
 import {ArrowIcon} from "../images/icons/arrow-icon";
@@ -59,48 +59,36 @@ export function SelectRoom() {
                     </button>
                 </div>
             </div>
-            {/*<div className="select__advertisement-tabs">*/}
-            {/*    <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked />*/}
-            {/*    <label htmlFor="tab-btn-1">Вкладка 1</label>*/}
-            {/*    <input type="radio" name="tab-btn" id="tab-btn-2" value="" />*/}
-            {/*    <label htmlFor="tab-btn-2">Вкладка 2</label>*/}
-            {/*    <input type="radio" name="tab-btn" id="tab-btn-3" value="" />*/}
-            {/*    <label htmlFor="tab-btn-3">Вкладка 3</label>*/}
-            {/*    <div id="content-1">*/}
-            {/*        Содержимое 1...*/}
-            {/*    </div>*/}
-            {/*    <div id="content-2">*/}
-            {/*        Содержимое 2...*/}
-            {/*    </div>*/}
-            {/*    <div id="content-3">*/}
-            {/*        Содержимое 3...*/}
-            {/*    </div>*/}
-            {/*</div>*/}
 
-            <div className="select__advertisement-tabs">
-                <div className="select__advertisement-tabs-tab">
-                    <a href={"link"} className="select__advertisement-tabs-tab-name">
-                        Спецпредложения
+            <div className="select__offer">
+                <div className="select__offer-tabs">
+                    <a className="select__offer-tabs-tab">
+                        <span>
+                            Спецпредложения
+                        </span>
+                    </a>
+                    <a className="select__offer-tabs-tab">
+                        <span>
+                            Афиша
+                        </span>
+                    </a>
+                    <a className="select__offer-tabs-tab">
+                        <span>
+                            Категории отдыха
+                        </span>
                     </a>
                 </div>
-                <div className="select__advertisement-tabs-tab">
-                    <a href={"link"} className="select__advertisement-tabs-tab-name">
-                        Афиша
+                <div className="select__offer-banners">
+                    <a className="select__offer-banners-banner">
+                        <img className="select__offer-banners-banner-image" src={SelectImage1}/>
+                    </a>
+                    <a className="select__offer-banners-banner">
+                        <img className="select__offer-banners-banner-image" src={SelectImage2}/>
+                        {/*<span className="select__offer-banners-banner-description">*/}
+                        {/*    10% Раннее бронирование*/}
+                        {/*</span>*/}
                     </a>
                 </div>
-                <div className="select__advertisement-tabs-tab">
-                    <a href={"link"} className="select__advertisement-tabs-tab-name">
-                        Категории отдыха
-                    </a>
-                </div>
-            </div>
-            <div className="select__advertisement-tabs-images">
-                <a href={"link"} className="select__advertisement-tabs-images-image">
-                    <img src={SelectImage1}/>
-                </a>
-                <a href={"link"} className="select__advertisement-tabs-images-image">
-                    <img src={SelectImage2}/>
-                </a>
             </div>
         </div>
     </div>
