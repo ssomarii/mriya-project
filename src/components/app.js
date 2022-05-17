@@ -2,7 +2,6 @@ import React from "react";
 import {Header} from "./header";
 import {BackgroundImages} from "./background-images";
 import {Promoblock} from "./promoblock";
-import {Example} from "./promoblock";
 import {Main} from "./main";
 
 
@@ -11,7 +10,6 @@ export function App() {
         <Header />
         <BackgroundImages />
         <Promoblock />
-        <Example />
         <Main />
     </>
 }

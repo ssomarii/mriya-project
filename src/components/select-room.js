@@ -5,7 +5,10 @@ import {ArrowIcon} from "../images/icons/arrow-icon";
 import SelectImage1 from "../images/select-pic-1.png";
 import SelectImage2 from "../images/select-pic-2.png";
 
+
+
 export function SelectRoom() {
+
     return <div className="select">
         <div className="select__container">
             <div className="select__title">
@@ -59,10 +62,9 @@ export function SelectRoom() {
                     </button>
                 </div>
             </div>
-
             <div className="select__offer">
                 <div className="select__offer-tabs">
-                    <a className="select__offer-tabs-tab">
+                    <a className="select__offer-tabs-tab" >
                         <span>
                             Спецпредложения
                         </span>
@@ -93,3 +95,6 @@ export function SelectRoom() {
         </div>
     </div>
 }
+
+
+

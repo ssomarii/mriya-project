@@ -6,8 +6,8 @@ import {CloudlyIcon} from "../images/icons/cloudly-icon";
 import "../style/promoblock.scss";
 import "../style/buttons.scss"
 import pin from "../images/pin.png";
-import React, { useEffect, useState } from 'react';
-import axios from "axios";
+// import React, { useEffect, useState } from 'react';
+// import axios from "axios";
 
 export function Promoblock() {
     return <div className="promoblock">
@@ -73,18 +73,18 @@ export function Promoblock() {
     </div>
 }
 
-export function Example() {
-    const [planetName, setPlanetName] = useState();
-
-    useEffect(() => {
-        axios.get("https://swapi.dev/api/planets/1/").then((resp) => {
-        setPlanetName(resp.data.name);
-        console.log(planetName);
-        });
-    }, [planetName, setPlanetName]);
-
-
-    return <div className="example">
-        {planetName}
-    </div>
-}
+// export function Example() {
+//     const [planetName, setPlanetName] = useState();
+//
+//     useEffect(() => {
+//         axios.get("https://swapi.dev/api/planets/1/").then((resp) => {
+//         setPlanetName(resp.data.name);
+//         console.log(planetName);
+//         });
+//     }, [planetName, setPlanetName]);
+//
+//
+//     return <div className="example">
+//         {planetName}
+//     </div>
+// }

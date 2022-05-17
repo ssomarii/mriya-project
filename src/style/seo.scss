@@ -1,0 +1,77 @@
+@import "fonts";
+@import "colors";
+
+.seo {
+  height: 600px;
+  position: relative;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon--wave {
+    margin-bottom: 78px;
+  }
+
+  &__icon-flower {
+    margin-bottom: 42px;
+  }
+
+  &__title {
+    margin-bottom: 42px;
+    font-family: "Times New Roman";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+  }
+
+  &__mark {
+    background-color: inherit;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-bottom: 38px;
+    font-family: "Times New Roman";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  &__text-block {
+    display: block;
+    text-align: center;
+  }
+
+  &__background-image-left {
+    background-image: url("../images/seo-background-left.png");
+    position: absolute;
+    height: 880px;
+    width: 365px;
+    left: 0;
+    top: -230px;
+    //z-index: -2;
+  }
+
+  &__background-image-right {
+    background-image: url("../images/seo-background-right.png");
+    position: absolute;
+    height: 848px;
+    width: 524px;
+    right: 0;
+    top: 130px;
+    //z-index: -2;
+  }
+}
