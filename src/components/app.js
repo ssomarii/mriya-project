@@ -3,6 +3,7 @@ import {Header} from "./header";
 import {BackgroundImages} from "./background-images";
 import {Promoblock} from "./promoblock";
 import {Main} from "./main";
+import {Footer} from "./footer";
 
 
 export function App() {
@@ -11,5 +12,6 @@ export function App() {
         <BackgroundImages />
         <Promoblock />
         <Main />
+        <Footer />
     </>
 }

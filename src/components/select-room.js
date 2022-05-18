@@ -1,13 +1,43 @@
-import React, {useState} from "react";
+import React, {useCallback, useState} from "react";
 import {CalendarIcon} from "../images/icons/calendar-icon";
 import {SubstractIcon} from "../images/icons/subtract-icon";
 import {ArrowIcon} from "../images/icons/arrow-icon";
 import SelectImage1 from "../images/select-pic-1.png";
 import SelectImage2 from "../images/select-pic-2.png";
+import {BannerList} from "./banner";
 
 
 
 export function SelectRoom() {
+    let tab1 = "Tab1";
+    let tab2 = "Tab2";
+    let tab3 = "Tab3";
+
+    let contentArr = {
+        [tab1]: <BannerList img={[SelectImage1, SelectImage2]}/>,
+        [tab2]: <BannerList img={[SelectImage2, SelectImage1]}/>,
+        [tab3]: <BannerList img={[SelectImage1, SelectImage2]}/>
+    }
+
+    const [activeTab, setActiveTab] = useState(tab1);
+    const onClickFirstTab = useCallback(
+        () => {
+            setActiveTab(tab1);
+        },
+        [setActiveTab]
+    );
+    const onClickSecondTab = useCallback(
+        () => {
+            setActiveTab(tab2);
+        },
+        [setActiveTab]
+    );
+    const onClickThirdTab = useCallback(
+        () => {
+            setActiveTab(tab3);
+        },
+        [setActiveTab]
+    );
 
     return <div className="select">
         <div className="select__container">
@@ -64,33 +94,37 @@ export function SelectRoom() {
             </div>
             <div className="select__offer">
                 <div className="select__offer-tabs">
-                    <a className="select__offer-tabs-tab" >
+                    {/*Tab1*/}
+                    <a onClick={onClickFirstTab} className={`select__offer-tabs-tab ${activeTab === tab1 ? "select__offer-tabs-tab_active" : ""}`}>
                         <span>
                             Спецпредложения
                         </span>
                     </a>
-                    <a className="select__offer-tabs-tab">
+                    {/*Tab2*/}
+                    <a onClick={onClickSecondTab} className={`select__offer-tabs-tab ${activeTab === tab2 ? "select__offer-tabs-tab_active" : ""}`}>
                         <span>
                             Афиша
                         </span>
                     </a>
-                    <a className="select__offer-tabs-tab">
+                    {/*Tab3*/}
+                    <a onClick={onClickThirdTab} className={`select__offer-tabs-tab ${activeTab === tab3 ? "select__offer-tabs-tab_active" : ""}`}>
                         <span>
                             Категории отдыха
                         </span>
                     </a>
                 </div>
-                <div className="select__offer-banners">
-                    <a className="select__offer-banners-banner">
-                        <img className="select__offer-banners-banner-image" src={SelectImage1}/>
-                    </a>
-                    <a className="select__offer-banners-banner">
-                        <img className="select__offer-banners-banner-image" src={SelectImage2}/>
-                        {/*<span className="select__offer-banners-banner-description">*/}
-                        {/*    10% Раннее бронирование*/}
-                        {/*</span>*/}
-                    </a>
-                </div>
+                {contentArr[activeTab]}
+                {/*<div className="select__offer-banners">*/}
+                {/*    /!*<a className="select__offer-banners-banner">*!/*/}
+                {/*    /!*    <img className="select__offer-banners-banner-image" src={SelectImage1}/>*!/*/}
+                {/*    /!*</a>*!/*/}
+                {/*    /!*<a className="select__offer-banners-banner">*!/*/}
+                {/*    /!*    <img className="select__offer-banners-banner-image" src={SelectImage2}/>*!/*/}
+                {/*    /!*    /!*<span className="select__offer-banners-banner-description">*!/*!/*/}
+                {/*    /!*    /!*    10% Раннее бронирование*!/*!/*/}
+                {/*    /!*    /!*</span>*!/*!/*/}
+                {/*    /!*</a>*!/*/}
+                {/*</div>*/}
             </div>
         </div>
     </div>
