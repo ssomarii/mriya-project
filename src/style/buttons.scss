@@ -50,4 +50,37 @@
     border: 1px solid $light-gold;
     border-radius: 50%;
   }
+
+  &_slider-left {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: $light-gold;
+
+    &::after {
+      position: absolute;
+      content: url("../images/icons/arrow-left.svg");
+      top: 10px;
+      left: 13px;
+      transform: rotate(90deg);
+    }
+  }
+
+  &_slider-right {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: $light-gold;
+
+    &::after {
+      position: absolute;
+      content: url("../images/icons/arrow-left.svg");
+      top: 10px;
+      left: 13px;
+      transform: rotate(-90deg);
+    }
+  }
+
 }
